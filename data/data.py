@@ -24,5 +24,8 @@ for start, end in months:
 statcast_data_2025 = pd.concat(all_data, ignore_index=True)
 
 # Save to Parquet
-statcast_data_2025.to_parquet('./statcast_data_2025.parquet', index=False)
-print("Saved full 2025 Statcast data to data/statcast_data_2025.parquet")
+#statcast_data_2025.to_parquet('./statcast_data_2025.parquet', index=False)
+#print("Saved full 2025 Statcast data to data/statcast_data_2025.parquet")
+
+statcast_data_2025.to_csv('./statcast_data_2025.csv', index=False)
+print("Saved full 2025 Statcast data to data/statcast_data_2025.csv")
